@@ -9,17 +9,21 @@
     <link rel="style.css"></rel>
 </head>
 <body>
-    <script type="text/javascript" src="app.js"></script>
+    <!-- <script type="text/javascript" src="app.js"></script> -->
 
-    <!-- <div id="content">
+    <div id="content">
         sss
     </div>
     <script>
-        let t = document.getElementById('content');
 
-        let btn = document.createElement('button');
-        btn.textContent = "확인"
-        t.append(btn);
+        function hello(name){
+            return `hello ${name} !`
+        }
+        let t = document.getElementById('content');
+        t.textContent = hello("hi");
+
+        let add = (a,b) =>a+b;
         
-    </script> -->
+        t.textContent = add(1,5);
+    </script>
 </body>

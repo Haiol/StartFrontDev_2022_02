@@ -62,6 +62,6 @@ function checkAnswer(){
 
 form.addEventListener('submit', function callback(e){
     e.preventDefault();
-    checkAnswer;
+    checkAnswer();
 });
 
